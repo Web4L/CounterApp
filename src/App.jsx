@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import NavBar from "./components/navbar";
-import Counters from "./components/counters";
+import NavBar from "./components/navbar.jsx";
+import Counters from "./components/counters.jsx";
 import componentTreeImg from "./images/component-tree.png";
 
 class App extends Component {
