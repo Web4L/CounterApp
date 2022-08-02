@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import NavBar from "./components/navbar.jsx";
 import Counters from "./components/counters.jsx";
-import componentTreeImg from "./images/component-tree.png";
+//import componentTreeImg from "./images/component-tree.png";
 
 class App extends Component {
 	state = {
@@ -58,11 +58,11 @@ class App extends Component {
 						handleDelete={this.handleDelete}
 						counters={this.state.counters}
 					/>
-					<img
+					{/* <img
 						src={componentTreeImg}
 						alt="component tree img"
 						style={{ maxWidth: "100%" }}
-					/>
+					/> */}
 				</main>
 			</div>
 		);
