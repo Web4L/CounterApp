@@ -1,18 +1,20 @@
-import React from "react";
+import React, { Component } from "react";
 
-const NavBar = (props) => {
-	return (
-		<div>
-			<nav class="navbar navbar-light bg-light">
-				<a class="navbar-brand m-2" href="#">
-					Navbar
-					<span className="badge nav-pills bg-secondary">
-						{props.totalCounters}
-					</span>
-				</a>
-			</nav>
-		</div>
-	);
-};
+class NavBar extends Component {
+	render() {
+		return (
+			<div>
+				<nav className="navbar navbar-light bg-light">
+					<p className="navbar-brand m-2">
+						Navbar
+						<span className="badge nav-pills bg-secondary">
+							{this.props.totalCounters}
+						</span>
+					</p>
+				</nav>
+			</div>
+		);
+	}
+}
 
 export default NavBar;
